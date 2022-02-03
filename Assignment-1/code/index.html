@@ -14,8 +14,24 @@
     <div id="root"></div>
     <script type="text/babel">
 //React Code here
- ReactDOM.render(<div></div>,document.getElementById('root'));
-
+ReactDOM.render(<div></div>,document.getElementById('root'));
+const resposiveUI=(
+<div id="container">
+  <div className="row orange">
+    <div className="col"></div>
+    <div className="col"></div>
+  </div>
+  <div className="row pink">
+    <div className="col"></div>
+  </div>
+  <div className="row blue">
+    <div className="col"></div>
+    <div className="col"></div>
+    <div className="col"></div>
+  </div>
+  </div>
+);
+ ReactDOM.render(resposiveUI,document.getElementById('root'));
 </script>
 <!--
      Note: this page is a great way to try React but it's not suitable for production.
