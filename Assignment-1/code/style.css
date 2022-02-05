@@ -1,1 +1,48 @@
+#container{
+    width:auto;
+    height:auto;
+}
+.row{
+    display:block;
+    width:auto;
+}
+.blue,.orange,.pink{
+    display:flex;
+}
+.orange .col{
+    height:100px;
+    background-color: orange;
+    margin:20px;
+}
+.pink .col{
+    height:100px;
+    background-color: pink;
+    margin:20px;
+}
+.blue .col{
+    height: 100px;
+    background-color: rgb(0, 119, 255);
+    margin:20px;
+}
 
+/*.........min width..1024px.........*/
+@media screen and (min-device-width:1024px){
+    .pink .col,.orange .col,.blue .col{
+        flex:1 1 auto;
+    }
+}
+/*.........min width..768px.........*/
+@media screen and (min-device-width:768px) and (max-device-width:1023px){
+    .pink .col,.orange .col{
+        flex:1 1 auto;
+    }
+    .blue{
+        flex-direction: column;
+    }   
+}
+/*.........min width..320px.........*/
+@media screen and (min-device-width:320px) and (max-device-width:767px){
+    .pink,.orange,.blue{
+        flex-direction: column;
+    }
+}
